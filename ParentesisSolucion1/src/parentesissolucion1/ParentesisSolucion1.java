@@ -21,7 +21,7 @@ public class ParentesisSolucion1 {
           
      Stack<Character> stackSimbolos = new Stack<Character>();
     char arraySimbolos[] = sentence.toCharArray();
-    int i;
+    int i;             
     for (i = 0; i < arraySimbolos.length; i++) {
       if (arraySimbolos[i] == '(' || arraySimbolos[i]=='{' || arraySimbolos [i]== '[' ) {
         stackSimbolos.push(arraySimbolos[i]);
@@ -32,8 +32,10 @@ public class ParentesisSolucion1 {
           stackSimbolos.push(arraySimbolos[i]);
         }
       }
+      
     }
+    
   return stackSimbolos.empty();
  
-}
+}    
 }
